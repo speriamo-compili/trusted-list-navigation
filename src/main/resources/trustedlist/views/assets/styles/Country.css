@@ -1,0 +1,42 @@
+.chart-plot-background {
+    -fx-background-color: white;
+}
+
+.chart{
+    -fx-font-size:18;
+}
+
+.name{
+    -fx-text-fill: #ff6f3b;
+    -fx-font-size: 18;
+}
+
+.code{
+    -fx-font-size: 14;
+}
+
+.numbers{
+    -fx-font-size: 18;
+}
+
+.country{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 3,3);
+}
+
+.text{
+    -fx-text-fill: #8894ac;
+}
+
+.selected{
+    -fx-background-color:  #858ef3;
+}
+
+.selected .text{
+    -fx-text-fill: white;
+}
+
+.selected .numbers{
+    -fx-text-fill: white;
+}

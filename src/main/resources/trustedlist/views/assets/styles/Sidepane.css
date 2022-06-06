@@ -1,0 +1,31 @@
+.sidepane-text{
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8894ac;
+}
+
+.sidepane-title{
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.active > .label{
+    -fx-text-fill: #fe6d6a;
+
+}
+
+.sidepane-button > .sidepane-icon{
+    -fx-icon-color: #c9d1de;
+}
+
+.active > .sidepane-icon{
+    -fx-icon-color: #fe6d6a;
+}
+
+.sidepane-button:hover .sidepane-icon{
+    -fx-icon-color: #fe6d6a;
+}
+.sidepane-button:hover .sidepane-text{
+    -fx-text-fill: #fe6d6a;
+}
+

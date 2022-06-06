@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root prefHeight="600.0" prefWidth="600.0"
+         style="-fx-background-color: white; -fx-background-radius: 20px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 3,3);"
+         stylesheets="@../assets/styles/CountryDetails.css" type="VBox" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml">
+   <VBox alignment="CENTER" prefWidth="600.0">
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+      </padding>
+      <Label text="Details of">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Label>
+      <Label fx:id="name" styleClass="countrydetails-title" text="Italy">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Label>
+      <HBox alignment="CENTER">
+         <HBox fx:id="back" alignment="CENTER">
+            <HBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+            <FontIcon iconColor="#ff6f3b" iconLiteral="lar-arrow-alt-circle-left" iconSize="30">
+               <HBox.margin>
+                  <Insets right="10.0"/>
+               </HBox.margin>
+            </FontIcon>
+            <Label text="Go back" textFill="#ff6f3b"/>
+         </HBox>
+      </HBox>
+   </VBox>
+   <GridPane VBox.vgrow="ALWAYS">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="221.0" minHeight="7.0" prefHeight="189.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES"/>
+      </rowConstraints>
+      <BarChart fx:id="typesChart" horizontalGridLinesVisible="false" legendVisible="false" prefWidth="300.0"
+                title="Service types" GridPane.rowSpan="2">
+         <xAxis>
+            <CategoryAxis side="BOTTOM"/>
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT"/>
+         </yAxis>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+         </padding>
+      </BarChart>
+      <PieChart fx:id="statusChart" labelsVisible="false" title="Services status" GridPane.columnIndex="1"
+                GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+         </padding>
+      </PieChart>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <Label text="About this country">
+            <font>
+               <Font size="20.0"/>
+            </font>
+            <VBox.margin>
+               <Insets/>
+            </VBox.margin>
+         </Label>
+         <TextFlow textAlignment="CENTER">
+            <Label text="This country has "/>
+            <Text fx:id="providers" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+            <Label text=" active providers"/>
+         </TextFlow>
+         <TextFlow textAlignment="CENTER">
+            <Label text="for a total of "/>
+            <Text fx:id="services" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+            <Label text=" services"/>
+         </TextFlow>
+         <TextFlow textAlignment="CENTER">
+            <Label text="of "/>
+            <Text fx:id="types" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+            <Label text=" different types."/>
+         </TextFlow>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets/>
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </padding>
+         <Label text="Want more info?">
+            <font>
+               <Font size="20.0"/>
+            </font>
+            <VBox.margin>
+               <Insets/>
+            </VBox.margin>
+         </Label>
+         <TextFlow textAlignment="CENTER">
+            <Label text="If you want to see &#10;more information about&#10;this country press the button&#10;"
+                   textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0"/>
+               </padding>
+            </Label>
+         </TextFlow>
+         <Button fx:id="moreinfo" mnemonicParsing="false" prefWidth="180.0"
+                 style="-fx-background-color: #ff6f3b; -fx-text-fill: white; -fx-background-radius: 25px;"
+                 text="View on EU website">
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+         </Button>
+      </VBox>
+   </GridPane>
+</fx:root>

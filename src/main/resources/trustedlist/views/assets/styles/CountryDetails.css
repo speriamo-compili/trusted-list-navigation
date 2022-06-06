@@ -1,0 +1,9 @@
+.countrydetails-title{
+    -fx-font-size: 30;
+}
+
+
+.chart-plot-background {
+    -fx-background-color: #eef2f5;
+    -fx-background-radius: 0 20px 0 0;
+}

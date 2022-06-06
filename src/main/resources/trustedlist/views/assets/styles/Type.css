@@ -1,0 +1,22 @@
+.backgrounded{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 3,3);
+}
+
+.selected{
+    -fx-background-color:  #858ef3;
+}
+
+.name{
+    -fx-font-size: 16;
+}
+
+.desc{
+    -fx-fill: #8894ac;
+}
+
+.selected .desc{
+    -fx-fill: white;
+
+}

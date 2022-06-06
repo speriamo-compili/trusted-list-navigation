@@ -1,0 +1,20 @@
+{
+  "tspId": 1,
+  "name": "Test provider",
+  "countryCode": "AT",
+  "qServiceTypes": [
+    "QCertESig"
+  ],
+  "services": [
+    {
+      "tspId": 1,
+      "serviceId": 1,
+      "countryCode": "AT",
+      "serviceName": "Test service",
+      "currentStatus": "http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn",
+      "qServiceTypes": [
+        "QCertESig"
+      ]
+    }
+  ]
+}

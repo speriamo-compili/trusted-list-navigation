@@ -1,0 +1,14 @@
+.type{
+    -fx-min-width: 100;
+    -fx-padding: 5;
+    -fx-border-color: #c9d1de;
+    -fx-text-fill: #8894ac;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+
+}
+
+.name{
+    -fx-text-fill: #ff6f3b;
+    -fx-font-size: 18;
+}
