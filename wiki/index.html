@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>EU - Trusted list navigation</title>
+  <meta name="author" content="SperiamoCompili.com">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="Go to the homepage"> <img class="w-50"
+              src="assets/images/TLN-logo.png" alt="Go to the homepage" /> </a>
+          <!-- Logo End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#tln_intro">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tln_systemdesign">Use cases</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#tln_usecase">Use case diagram</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc1">Use case #1</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc2">Use case #2</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc3">Use case #3</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc4">Use case #4</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc5">Use case #5</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc6">Use case #6</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_uc7">Use case #7</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#tln_domain">Domain model</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tln_design">Design model</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#tln_packagedesign">Packages</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_modeldesign">Model</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_viewdesign">View</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_controllerdesign">Controller</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#tln_sequence">Internal interaction diagram</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#tln_datainit">Data initialization</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_viewlist">View list</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_search">Search</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#tln_tests" class="nav-link">Tests</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#tln_unit">Unit test cases</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tln_system">System test cases</a></li>
+          </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#tln_manual">Manual</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#tln_download">Download</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_execute">Execute</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tln_libraries">Libraries</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+          <!-- Getting Started -->
+
+          <section id="tln_intro">
+
+            <h1 class="my-2" id="tln_intro">Introduction</h2>
+              <p>
+                As soon as the necessary <b>instructions</b> for the software implementation were received,
+                <b>requirements analysis</b> was carried out. <br>
+                The <b>design</b> the program would later have was also analyzed and created.<br>
+              </p>
+            
+            <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, please
+              feel free to open a issue in our @<a target="_blank" href="https://github.com/speriamo-compili/trusted-list-navigation/tree/main">github</a> page.</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="tln_systemdesign">
+            <h1>System design</h1>
+            <p class="lead">
+              In the following section it is then possible to view the account of these two main activities that
+              created the basis of the next section, which was implementation.
+            </p>
+          </section>
+
+          <section id="tln_usecase">
+            <h2 class="my-2">Use case</h2>
+            <p>
+              The first step we tackled about was to figure out which actions the user would be able to perform with our
+              program.</br>
+              First of all, in order to carry out this, we relied on the <b>Use case</b> diagram made with UML (the Unified Modeling Language) in order to specify the functionalities we
+              wanted to offer with our software.
+            </p>
+
+
+            <img class="w-100" src="./assets/images/Use-Case.jpg" alt="Use case image">
+
+            <div class="use-case my-4">
+              <div class="w-100 text-center">
+                <h4 id="tln_uc1">Use case #1</h4>
+              </div>
+              <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><strong>Use case name</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">View countries list</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Actors</strong></p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Description</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">It shows the list of countries that supply some qualified trust
+                          service providers.</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Preconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">Use case #7 must be executed with success&nbsp;</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Flow</strong></p>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on
+                            &ldquo;Countries&rdquo; button triggering the use case</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the countries
+                            list</span></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Postconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">The user is viewing the countries list pane.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="use-case my-4">
+              <div class="w-100 text-center">
+                <h4 id="tln_uc2">Use case #2</h4>
+              </div>
+              <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><strong>Use case name</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">View providers list</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Actors</strong></p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Description</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">It shows the list of providers, for each of them it displays
+                          the
+                          services they supply.</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Preconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">Use case #7 must be executed with success&nbsp;</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Flow</strong></p>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on
+                            &ldquo;Providers&rdquo; button triggering the use case</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the providers
+                            list</span></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Postconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">The user is viewing the providers list pane.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="use-case my-4">
+              <div class="w-100 text-center">
+                <h4 id="tln_uc3">Use case #3</h4>
+              </div>
+              <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><strong>Use case name</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">View services list</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Actors</strong></p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Description</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">It shows the list of services, for each of them it displays the
+                          types of service.</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Preconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">Use case #7 must be executed with success&nbsp;</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Flow</strong></p>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on
+                            &ldquo;Services&rdquo; button triggering the use case</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the services
+                            list</span></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Postconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">The user is viewing the services list pane.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="use-case my-4">
+              <div class="w-100 text-center">
+                <h4 id="tln_uc4">Use case #4</h4>
+              </div>
+              <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><strong>Use case name</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">View types list</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Actors</strong></p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Description</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">It shows the list of service types, for each of them it
+                          displays
+                          a short description.</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Preconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">Use case #7 must be executed with success&nbsp;</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Flow</strong></p>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on
+                            &ldquo;Types&rdquo; button triggering the use case</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the types
+                            list</span></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Postconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">The user is viewing the types list pane.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="use-case my-4">
+              <div class="w-100 text-center">
+                <h4 id="tln_uc5">Use case #5</h4>
+              </div>
+              <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><strong>Use case name</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">View country details</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Actors</strong></p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Description</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">It shows an histogram that represents the service types in the
+                          selected country and a pie chart that describes the status of services.</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Preconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">Use case #7 must be executed with success and the user is
+                          viewing
+                          the countries list (Use case #1).</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Flow</strong></p>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on a country card
+                            triggering the use case</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the country
+                            details
+                            pane</span></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><strong>Postconditions</strong></p>
+                    </td>
+                    <td>
+                      <p><span style="font-weight: 400;">The user is viewing the country details pane.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="use-case my-4">
+                <div class="w-100 text-center">
+                  <h4 id="tln_uc6">Use case #6</h4>
+                </div>
+                <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><strong>Use case name</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">Search Service</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Actors</strong></p>
+                      </td>
+                      <td>
+                        <ul>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">User</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Description</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">The user searches a service selecting countries, providers,
+                            types
+                            and status.</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Preconditions</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">Use case #7 must be executed with success</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Flow</strong></p>
+                      </td>
+                      <td>
+                        <ol>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The user clicks on &ldquo;Search
+                              service&rdquo; button triggering the use case</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the countries
+                              list</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The user selects one or more
+                              countries and clicks on &ldquo;Next&rdquo; button</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the types of
+                                services based on the previous selections</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The user selects one or more
+                              providers and clicks on &ldquo;Next&rdquo; button</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the types of
+                              services based on the previous selections</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The user selects one or more
+                              types
+                              and clicks on &ldquo;Next&rdquo; button</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows the status of
+                              services based on the previous selections</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The user selects one or more
+                              status
+                              and clicks on &ldquo;Next&rdquo; button</span></li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system shows all services
+                              matching the previous selections</span></li>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Postconditions</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">The user is viewing a services list based on its
+                            selections.</span></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="use-case my-4">
+                <div class="w-100 text-center">
+                  <h4 id="tln_uc7">Use case #7</h4>
+                </div>
+                <table class="table w-sm-100 w-lg-75 mx-auto table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><strong>Use case name</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">Provide data</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Actors</strong></p>
+                      </td>
+                      <td>
+                        <ul>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">European Union API</span></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Description</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">The API responds to requests made by the system and provides
+                            data
+                            to work on.</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Preconditions</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">The system must have an internet connection.</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Flow</strong></p>
+                      </td>
+                      <td>
+                        <ol>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The system makes API
+                              requests</span>
+                          </li>
+                          <li style="font-weight: 400;"><span style="font-weight: 400;">The European Union API
+                              responds</span></li>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><strong>Postconditions</strong></p>
+                      </td>
+                      <td>
+                        <p><span style="font-weight: 400;">The system has initialized DTO with received data.</span></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+
+
+          <hr class="divider">
+
+          <section id="tln_domain">
+
+            <h2>Domain model</h2>
+
+            <p>
+              After dealing with the creation of use cases, the next step was to sketch out a <b>domain model</b>.<br>
+
+              A Domain model is a structured visual representation of interconnected concepts or real-world objects that
+              incorporates vocabulary, key concepts, behavior, and relationships of all of its entities.
+            </p>
+
+            <img class="w-100" src="./assets/images/DomainModel.drawio.png" alt="Domain model">
+
+            <p>
+              While doing the domain model, we analyzed what entities were in our sphere of interest and how we could use them.<br>
+
+              We found concrete entities (such as nations, services, providers, types, and status) but we decided to
+              focus on abstract entities such as search and selection.<br>
+
+              This choice was made since we wanted to create a software that would allow <b>Trusted Services</b> navigation and
+              search, therefore we concluded that parameter selection (e.g. nation, service etc) was particularly important in our plans.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section id="tln_design">
+
+            <h2>Design model</h2>
+            
+            <p class="lead">
+              In the following section you will find all the information found during the design phase, identifying 
+              all the software entities that will eventually make up the program in its entirety
+            </p>
+
+            
+
+            <h4 id="tln_packagedesign" class="mt-5">Package design</h4>
+            <p>
+              Due to the use of JavaFX for creating the UI, we decided to 
+              follow its architectural pattern by maintaining the MVC (Model-View-Controller) division. <br>
+
+              In our case, being in a Java development environment, this division was done through the use of packages. <br>
+
+              Here is the pattern between the different packages.
+            </p>
+            <img class="w-sm-100 w-lg-50" src="./assets/images/design/PackageDesignModel.drawio.png" alt="Packages model">
+
+            <h4 id="tln_modeldesign" class="mt-5">Model design</h4>
+            <p>
+              Model means the data set on which the UI visualization is based.
+            </p>
+            <img class="w-100" src="./assets/images/design/ModelsDesignModel.png" alt="Models model">
+
+            <h4 id="tln_viewdesign" class="mt-5">View design</h4>
+            <p>
+              A view is defined as the set of graphical elements that compose the UI.
+            </p>
+            <img class="w-100" src="./assets/images/design/ViewsDesignModel.png" alt="Views model">
+
+            <h4 id="tln_controllerdesign" class="mt-5">Controller design</h4>
+            <p>
+              Controller refers to the set of elements that manage user interactions (eg. button clicks).
+            </p>
+            <img class="w-100" src="./assets/images/design/ControllersDesignModel.png" alt="Controllers model">
+
+          </section>
+
+          <hr class="divider">
+
+          <section id="tln_sequence">
+
+            <h2>Internal interaction diagram</h2>
+
+            <p class="lead">
+              From the term Interaction, it is clear that the diagram is used to describe some type of interactions
+              among the different elements in the model. <br>
+              This interaction is a part of dynamic behavior of the system
+              and it is represented in UML by <b>The Internal interaction diagram</b>, 
+              which purpose is to visualize the interactive behavior of the system.<br>
+              The internal sequence diagram will be shown below, going to focus on the creation of entities related to
+              nations, providers and services with the data provided by the API.
+            </p>
+
+            <h4 id="tln_datainit" class="mt-4">Data initialization</h4>
+            <p class="lead">
+              The following sequence diagram is used to represent the interaction between classes when the system makes the API request and intiialzie the data.
+            </p>
+            <img src="./assets/images/interaction/Sequence-Diagram_v2.png" alt="IIDTLN" class="w-100">
+
+            <h4 id="tln_viewlist" class="mt-4">View list</h4>
+            <p class="lead">
+              The following sequence diagram is used to represent the interaction between classes when the user wants to view the countries list. <br>
+              The same sequence diagram is used also when the user wants to view the providers, services and types list (Changing the controller 
+              with their respective classes).
+            </p>
+            <img src="./assets/images/interaction/Sequence-Diagram_ViewCountriesList.png" alt="IIDTLN" class="w-50">
+            
+            <h4 id="tln_search" class="mt-4">Search</h4>
+            <p class="lead">
+              The following sequence diagram is used to represent the interaction between classes when the user wants to search for a service
+            </p>
+            <img src="./assets/images/interaction/Sequence-Diagram_SearchService.png" alt="IIDTLN" class="w-100">
+
+          </section>
+
+          <hr class="divider">
+
+
+          
+
+          <section id="tln_tests">
+            <h2>System and unit testing</h2>
+
+            <p class="lead">In the following section you will find the infos about the tests 
+              carried out on the code and their corresponding reports.
+            </p>
+
+            
+
+            <hr class="divider">
+
+            <h2 id="tln_unit">Unit test cases</h2>
+            <p class="lead">
+              The main classes we wanted to test were the ones in the <code class="html">trustedlist.engine</code> package because the other 
+              classes are used to create and handle the GUI, however it will be tested later in the <b>"System Test Cases"</b>. 
+            </p>
+            <p class="lead">
+              In particularly, we created 6 test classes for a total of 38 tests.
+            </p>
+            <p class="lead">
+              These tests were created to prove the correctness and efficiency of the code, allowing us and making sure that the various meaningful classes are working precisely and right.
+            </p>
+
+            <p class="lead">The final test report can be found <a href="./assets/pages/tests.html" target="_blank">here</a>.</p>
+
+
+          </section>
+
+          <hr class="divider">
+
+          <section>
+            <h2 id="tln_system">System test cases</h2>
+
+            <p>TODO</p>
+          </section>
+
+
+          <hr class="divider">
+
+          <section id="tln_manual">
+
+            <h1>Manual</h1>
+            <p class="lead">In the following section you will find the infos about running and executing the software,
+              aswell information about the features included in the program and the ways we used to develop it.
+            </p>
+
+            <hr class="divider">
+
+            <h2 id="tln_download">Download</h2>
+            <p class="lead">If you want to download our software, follow this simple steps:</p>
+            <div class="row">
+              <div class="col-sm-12 col-lg-8">
+                <ol>
+                  <li>Go to our @<a href="https://github.com/speriamo-compili/trusted-list-navigation/tree/main" target="_blank">github</a> page.</li>
+                  <li>
+                    Click on the green <b>Code</b> button.
+                    <img class="w-100" src="./assets/images/TLN-download.PNG" alt="Download button position">
+                  </li>
+                  <li>
+                    Click on <b>Download zip</b>.
+                    <img class="w-100" src="./assets/images/TLN-download-1.PNG" alt="Download button position">
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+
+
+          <section id="tln_execute">
+            <h2>Execute</h2>
+            <p class="lead">To run our software follow this simple steps:</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-12 col-lg-8">
+                <ol>
+                  <li>
+                    Go to the <b>Downloads</b> folder of your operative system.
+                  </li>
+                  <li>
+                    Unzip the files.
+                  </li>
+                  <li>
+                    Go to the <b>out</b> directory.
+                  </li>
+                  <li>
+                    <!-- TODO: Check if build name is the same -->
+                    Open the folder in the terminal and execute the file typing <code class="html">java -jar TLN.jar</code>.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="tln_features">
+            <h2>Features</h2>
+            <p class="lead">
+              The aim of our program is to allow users to view the list of European Union countries and their related providers and services.<br>
+
+              This functionality was achieved through the use of the Rest API provided by the European Union to obtain the data.
+              These data were then used to create the interface to interact with the user.<br>
+
+              The program in particular was created through the use of JavaFX, a library that allows the creation of interfaces in the Java language.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="tln_libraries">
+            <h2 >Libraries</h2>
+          
+            <p class="lead">
+              During the development of the software, the following libraries were used:
+            </p>
+
+            <li>
+              <b>org.json</b>: It's a library that provides us with classes that are used to parse and manipulate JSON in Java. (<a href="https://mvnrepository.com/artifact/org.json/json">Download</a>)
+            </li>
+            <li>
+              <b>iDocs</b>: It's a free one page documentation html template built with Bootstrap 4.
+              (<a href="https://github.com/harnishdesign/iDocs">Download</a>)
+            </li>
+
+            
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+        <p class="text-center">Copyright &copy; 2022 <a href="https://github.com/speriamo-compili/trusted-list-navigation/tree/main">SperiamoCompili</a>. All Rights
+          Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
