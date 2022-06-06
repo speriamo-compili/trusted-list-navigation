@@ -1,0 +1,11 @@
+module:trustedlist
+trustedlist
+trustedlist.controllers
+trustedlist.controllers.cards
+trustedlist.controllers.panes
+trustedlist.models.DTO
+trustedlist.models.engine
+trustedlist.models.exceptions
+trustedlist.models.utility
+trustedlist.views.cards
+trustedlist.views.panes
