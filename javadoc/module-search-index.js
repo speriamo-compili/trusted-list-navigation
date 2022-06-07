@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"trustedlist"}];updateSearchResults();
